@@ -20,9 +20,9 @@ import base64
 # ✅ Translator
 from deep_translator import GoogleTranslator
 
-gemini_key = "AIzaSyBnkQ8qOdSEtn3Vb6xsDaFAVbAXe6-BOkA"
-pinecone_key = "pcsk_6DwYPQ_Lr5vn9CJZvz5Nzaxu39L6EwQJVvovEbogPZG8iBFTv7d5qJkTebBk5Qa6hETnH6"
-index_name = "langchain-rag-gemini"
+gemini_key = ""
+pinecone_key = ""
+index_name = ""
 
 # Streamlit UI setup
 st.set_page_config(page_title="🗣️ Multilingual Budget Chatbot", layout="centered")
@@ -189,3 +189,4 @@ If the answer is **not found in the context**, respond with:
                     st.write(doc.page_content[:500])
 else:
     st.info("📁 Please upload a Budget PDF to begin.")
+
