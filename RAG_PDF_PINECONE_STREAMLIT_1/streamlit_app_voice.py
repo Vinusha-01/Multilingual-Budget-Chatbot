@@ -18,10 +18,10 @@ import tempfile
 import base64
 
 # Load keys
-load_dotenv()
-gemini_key = os.getenv("GEMINI_API_KEY")
-pinecone_key = os.getenv("PINECONE_API_KEY")
-index_name = "langchain-test-index-gemini"
+
+gemini_key =""
+pinecone_key = ""
+index_name = ""
 
 # Streamlit setup
 st.set_page_config(page_title="🗣️ Voice Budget Chatbot", layout="centered")
@@ -161,3 +161,4 @@ If the answer is **not found in the context**, respond with:
                     st.write(doc.page_content[:500])
 else:
     st.info("Please upload a Budget PDF to begin.")
+
