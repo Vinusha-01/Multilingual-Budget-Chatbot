@@ -14,10 +14,9 @@ from langchain_pinecone import PineconeVectorStore
 from google.generativeai.types.safety_types import HarmBlockThreshold, HarmCategory
 
 # load keys
-load_dotenv()
-gemini_key = os.getenv("GEMINI_API_KEY")
-pinecone_key = os.getenv("PINECONE_API_KEY")
-index_name = "langchain-test-index-gemini"
+gemini_key = ""
+pinecone_key = ""
+index_name = ""
 
 # Set up Streamlit page
 st.set_page_config(page_title="📊 Budget PDF Chatbot", layout="centered")
@@ -126,3 +125,4 @@ If the answer is **not found in the context**, respond with:
 
 else:
     st.info("Please upload a Budget PDF to begin.")
+
